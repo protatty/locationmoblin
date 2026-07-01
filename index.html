@@ -15,9 +15,11 @@
       width: 100%;
       height: 100vh;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+     flex-direction: column;          /* главная ось — вертикально */
+  justify-content: flex-end;       /* прижимаем вниз */
+  align-items: flex-end;           /* прижимаем вправо */
+  text-align: right;               /* на случай, если текст многострочный */
+  box-sizing: border-box;          /* чтобы padding не ломал 100% */
     }
     #location {
       max-width: 90%;
